@@ -103,3 +103,7 @@ footer {
 #buttonHolder img:hover {
 	opacity:.5;
 }
+
+#headLine h1 {transition: all 1s ease-in-out;}
+
+.headline-orange {color: orange;}
