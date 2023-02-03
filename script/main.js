@@ -11,15 +11,13 @@ let navButtons = document.querySelectorAll('#buttonHolder img'),
 
 // functions go in the middle
 // these are the "actions" that should happen
-function changeBGImage () {
-	debugger;
-	// object.property = "new value"
-	// theHeadline.textContent = "Drag and Drop is fun!";
-	// theHeadline.style.color = "blue";
-	// theHeadline.classList.add = ("headline-orange");
-	
+function changeBGImage () {	
+	let newBGPath = "images/backGround" + this.id + ".jpg";
+
 	// change the background image in the drop zone
-	puzzleBoard.style.backgroundImage = 'url("../images/backGround" = this.id = ".jpg")';
+	// the `${}` is called a JavaScript Template String - whatever is inside the curly
+	// braces os evaluated at runtime and interpolated (relpaces the bracket notation)
+	puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
 }
 
 // event handling at the bottom -> how things react when you
